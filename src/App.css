@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --font-dmSans: "DM Sans", sans-serif;
+  /* --color-primary: #0b1120;
+  --color-secondary: #10b981;
+  --color-accent: #fcfcfc; */
+}
+
+
+@layer utilities {
+  .clip-shape-custom {
+    clip-path: polygon(10% 0, 90% 0, 100% 90%, 0% 90%);
+    clip-path: path("M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z");
+  }
+}
