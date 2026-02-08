@@ -2,7 +2,7 @@ import React from "react";
 import Images from "../Images";
 import Man from "/src/assets/man.png";
 import Button from "../Button";
-import Container from "../Conteinar"; // Spelling check: Conteinar
+import Container from "../Container"; // Spelling check: Conteinar
 
 const Benner = () => {
   return (

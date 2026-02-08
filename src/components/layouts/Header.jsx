@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Images from '../Images';
 import Logo from '/src/assets/Logo.png';
-import Container from '../Conteinar'; 
+import Container from '../Container'; 
 import { FaAnglesRight } from "react-icons/fa6";
 
 const Header = () => {
@@ -43,7 +43,6 @@ const Header = () => {
               <li className={navLinkStyle}>Services</li>
               <li className={navLinkStyle}>Resume</li>
               <li className={navLinkStyle}>Projects</li>
-              <li className={navLinkStyle}>Blogs</li>
               <li className={navLinkStyle}>Contact</li>
             </ul>
           </div>
