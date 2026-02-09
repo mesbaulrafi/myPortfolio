@@ -10,7 +10,7 @@ const Header = () => {
   // Scroll track korar jonno logic
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 20) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -18,7 +18,7 @@ const Header = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  },);
 
   // Menu item style variable
   const navLinkStyle = "text-base text-white hover:text-[#00BCD4] relative inline-block after:content-[''] after:absolute after:bottom-[-5px] after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-[#00BCD4] after:transition-all after:duration-300 hover:after:w-full cursor-pointer transition-all duration-300";
