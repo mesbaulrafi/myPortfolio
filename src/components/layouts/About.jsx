@@ -1,9 +1,11 @@
 import React from "react";
+import Container from "../Container";
 
 const About = () => {
   return (
-    <>
-      <div className="flex">
+    <div className="bg-[#1E1E1E] py-25">
+      <Container>
+        <div className="flex justify-between">
         {/* About Text part */}
         <div className="">
           <h4 className="">Personal Details</h4>
@@ -15,7 +17,7 @@ const About = () => {
           </p>
           {/* Icon Part */}
           <div className="">
-
+            
           </div>
         </div>
         <div className="">
@@ -25,7 +27,8 @@ const About = () => {
           <p className="">Date of birth : <span>06 june 1989</span></p>
         </div>
       </div>
-    </>
+      </Container>
+    </div>
   );
 };
 
