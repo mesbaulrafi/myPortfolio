@@ -4,6 +4,7 @@ const About = () => {
   return (
     <>
       <div className="flex">
+        {/* About Text part */}
         <div className="">
           <h4 className="">Personal Details</h4>
           <p className="">
@@ -12,6 +13,9 @@ const About = () => {
           <p className="">
             by the readable content of a page when looking at its layout.
           </p>
+          <div className="">
+
+          </div>
         </div>
         <div className=""></div>
       </div>
