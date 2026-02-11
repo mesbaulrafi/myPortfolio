@@ -13,6 +13,7 @@ const About = () => {
           <p className="">
             by the readable content of a page when looking at its layout.
           </p>
+          {/* Icon Part */}
           <div className="">
 
           </div>
