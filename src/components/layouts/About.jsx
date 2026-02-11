@@ -18,7 +18,12 @@ const About = () => {
 
           </div>
         </div>
-        <div className=""></div>
+        <div className="">
+          <p className=""></p>
+          <p className=""></p>
+          <p className=""></p>
+          <p className=""></p>
+        </div>
       </div>
     </>
   );
