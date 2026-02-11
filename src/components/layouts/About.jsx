@@ -20,9 +20,9 @@ const About = () => {
         </div>
         <div className="">
           <p className="">Date of birth : <span>06 june 1989</span></p>
-          <p className=""></p>
-          <p className=""></p>
-          <p className=""></p>
+          <p className="">Date of birth : <span>06 june 1989</span></p>
+          <p className="">Date of birth : <span>06 june 1989</span></p>
+          <p className="">Date of birth : <span>06 june 1989</span></p>
         </div>
       </div>
     </>
