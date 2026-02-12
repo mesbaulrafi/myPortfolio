@@ -32,9 +32,9 @@ const About = () => {
         </div>
         <div className="">
           <p className="">Date of birth : <span>06 june 1989</span></p>
-          <p className="">Date of birth : <span>06 june 1989</span></p>
-          <p className="">Date of birth : <span>06 june 1989</span></p>
-          <p className="">Date of birth : <span>06 june 1989</span></p>
+          <p className="">Spoken Langages : <span>English - French - German</span></p>
+          <p className="">Nationality : <span>USA</span></p>
+          <p className="">Interest : <span>Music, Reading, journey</span></p>
         </div>
       </div>
       </Container>
