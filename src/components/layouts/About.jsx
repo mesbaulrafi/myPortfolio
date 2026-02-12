@@ -1,5 +1,12 @@
 import React from "react";
 import Container from "../Container";
+import { FaGithub } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { LiaGoogle } from "react-icons/lia";
+import { FaLinkedinIn } from "react-icons/fa6";
+
+
+
 
 const About = () => {
   return (
@@ -16,8 +23,11 @@ const About = () => {
             by the readable content of a page when looking at its layout.
           </p>
           {/* Icon Part */}
-          <div className="">
-            
+          <div className="flex">
+            <i><FaGithub /></i>
+            <i><FaTwitter /></i>
+            <i><LiaGoogle /></i>
+            <i><FaLinkedinIn /></i>
           </div>
         </div>
         <div className="">
