@@ -33,7 +33,7 @@ const About = () => {
           </div>
         </div>
         {/* Text R */}
-        <div className="flex items-center ">
+        <div className="flex items-center gap-x-8">
           
           <div className="">
             <p className="pb-2.5">Date of birth </p>
@@ -42,10 +42,10 @@ const About = () => {
           <p className="pb-2.5">Interest </p>
           </div>
           <div className="">
-            <span>:</span> <p className="pb-2.5">06 june 1989</p>
-          <span>:</span> <p className="pb-2.5">English - French - German</p>
-          <span>:</span> <p className="pb-2.5">USA</p>
-          <span>:</span> <p className="pb-2.5">Music, Reading, journey</p>
+          <p className="pb-2.5"> <span className="pr-8 text-base font-light">:</span>06 june 1989</p>
+           <p className="pb-2.5"><span className="pr-8 text-base font-light">:</span> English - French - German</p>
+           <p className="pb-2.5"><span className="pr-8 text-base font-light">:</span> USA</p>
+           <p className="pb-2.5"><span className="pr-8 text-base font-light">:</span> Music, Reading, journey</p>
           </div> 
         </div>
       </div>
