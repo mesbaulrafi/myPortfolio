@@ -24,10 +24,12 @@ const About = () => {
           </p>
           {/* Icon Part */}
           <div className="flex gap-4">
-            <i><FaGithub /></i>
-            <i><FaTwitter /></i>
-            <i><LiaGoogle /></i>
-            <i><FaLinkedinIn /></i>
+            <i className="p-2 bg-transparent border border-white rounded-2xl"><FaGithub /></i>
+            <i className="p-2 bg-transparent border border-white rounded-2xl"><FaTwitter /></i>
+            <i className="p-2 bg-transparent border border-white rounded-2xl"><FaTwitter /></i>
+            <i className="p-2 bg-transparent border border-white rounded-2xl"><LiaGoogle /></i>
+            <i className="p-2 bg-transparent border border-white rounded-2xl"><FaTwitter /></i>
+            <i className="p-2 bg-transparent border border-white rounded-2xl"><FaLinkedinIn /></i>
           </div>
         </div>
         {/* Text R */}
