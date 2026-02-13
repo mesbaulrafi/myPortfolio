@@ -14,12 +14,12 @@ const About = () => {
       <Container>
         <div className="flex justify-between">
         {/* About Text part */}
-        <div className="">
-          <h4 className="">Personal Details</h4>
-          <p className="">
+        <div className="w-[450px]">
+          <h4 className="bg-[#FFC835] text-2xl inline-block">Personal Details</h4>
+          <p className="pt-2 text-[20px]">
             It is a long established fact that a reader will be distracted
           </p>
-          <p className="">
+          <p className="pb-6 text-[20px]">
             by the readable content of a page when looking at its layout.
           </p>
           {/* Icon Part */}
