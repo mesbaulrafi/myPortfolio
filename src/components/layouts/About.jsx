@@ -13,7 +13,7 @@ const About = () => {
     <div className="bg-[#1E1E1E] py-25">
       <Container>
         <div className="flex justify-between">
-        {/* About Text part */}
+        {/* About Text part Left*/}
         <div className="w-[450px]">
           <h4 className="bg-[#FFC835] text-2xl inline-block">Personal Details</h4>
           <p className="pt-2 text-[20px]">
