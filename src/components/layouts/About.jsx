@@ -23,7 +23,7 @@ const About = () => {
             by the readable content of a page when looking at its layout.
           </p>
           {/* Icon Part */}
-          <div className="flex">
+          <div className="flex gap-4">
             <i><FaGithub /></i>
             <i><FaTwitter /></i>
             <i><LiaGoogle /></i>
