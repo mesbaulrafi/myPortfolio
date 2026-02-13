@@ -33,7 +33,7 @@ const About = () => {
           </div>
         </div>
         {/* Text R */}
-        <div className="">
+        <div className="flex items-center ">
           
           <div className="">
             <p className="pb-2.5">Date of birth </p>
@@ -42,11 +42,11 @@ const About = () => {
           <p className="pb-2.5">Interest </p>
           </div>
           <div className="">
-
-          </div>: <span>06 june 1989</span>
-          : <span>English - French - German</span>
-          : <span>USA</span>
-          : <span>Music, Reading, journey</span>
+            <span>:</span> <p className="pb-2.5">06 june 1989</p>
+          <span>:</span> <p className="pb-2.5">English - French - German</p>
+          <span>:</span> <p className="pb-2.5">USA</p>
+          <span>:</span> <p className="pb-2.5">Music, Reading, journey</p>
+          </div> 
         </div>
       </div>
       </Container>
