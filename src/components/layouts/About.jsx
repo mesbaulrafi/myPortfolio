@@ -34,10 +34,19 @@ const About = () => {
         </div>
         {/* Text R */}
         <div className="">
-          <p className="pb-2.5">Date of birth : <span>06 june 1989</span></p>
-          <p className="pb-2.5">Spoken Langages : <span>English - French - German</span></p>
-          <p className="pb-2.5">Nationality : <span>USA</span></p>
-          <p className="pb-2.5">Interest : <span>Music, Reading, journey</span></p>
+          
+          <div className="">
+            <p className="pb-2.5">Date of birth </p>
+          <p className="pb-2.5">Spoken Langages </p>
+          <p className="pb-2.5">Nationality </p>
+          <p className="pb-2.5">Interest </p>
+          </div>
+          <div className="">
+
+          </div>: <span>06 june 1989</span>
+          : <span>English - French - German</span>
+          : <span>USA</span>
+          : <span>Music, Reading, journey</span>
         </div>
       </div>
       </Container>
