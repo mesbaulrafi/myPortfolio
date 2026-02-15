@@ -5,20 +5,20 @@ import Android from "/src/assets/android.png"
 
 
 
-const Tools = () => {
+const Tools = ({toolsImg,toolsTitle,ToolsText}) => {
   return (
     <div className="">
-      <Container>
-        <div className="bg-[#17171C] w-20 flex">
+      
+        <div className="bg-[#17171C] p-6 w-60 flex items-center rounded-sm">
           <div className="">
-            <Images imgSrc={Android} />
+            <Images imgSrc={toolsImg} className={'pr-4'}/>
             </div>
           <div className="">
-            <h4 className="">Android</h4>
-            <p className="">2 Year Experience</p>
+            <h4 className="">{toolsTitle}</h4>
+            <p className="">{ToolsText}</p>
           </div>
         </div>
-      </Container>
+      
     </div>
   );
 };
