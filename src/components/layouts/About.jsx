@@ -26,9 +26,7 @@ const About = () => {
           <div className="flex gap-4">
             <i className="p-2 bg-transparent border border-white rounded-2xl"><FaGithub /></i>
             <i className="p-2 bg-transparent border border-white rounded-2xl"><FaTwitter /></i>
-            <i className="p-2 bg-transparent border border-white rounded-2xl"><FaTwitter /></i>
             <i className="p-2 bg-transparent border border-white rounded-2xl"><LiaGoogle /></i>
-            <i className="p-2 bg-transparent border border-white rounded-2xl"><FaTwitter /></i>
             <i className="p-2 bg-transparent border border-white rounded-2xl"><FaLinkedinIn /></i>
           </div>
         </div>
