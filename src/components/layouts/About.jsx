@@ -32,7 +32,7 @@ const About = () => {
             <i className="p-2 bg-transparent border border-white rounded-2xl"><FaLinkedinIn /></i>
           </div>
         </div>
-        {/* Text R */}
+        {/* Text Right */}
         <div className="flex items-center gap-x-8">
           
           <div className="">
