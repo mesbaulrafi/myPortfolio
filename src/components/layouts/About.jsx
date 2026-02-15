@@ -47,6 +47,12 @@ const About = () => {
           </div> 
         </div>
       </div>
+      {/* Tools  */}
+      <div className="py-20">
+        <div className="bg-[#17171C] ">
+          
+        </div>
+      </div>
       </Container>
     </div>
   );
