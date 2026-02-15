@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { LiaGoogle } from "react-icons/lia";
 import { FaLinkedinIn } from "react-icons/fa6";
+import Tools from "./Tools";
 
 
 
@@ -49,9 +50,7 @@ const About = () => {
       </div>
       {/* Tools  */}
       <div className="py-20">
-        <div className="bg-[#17171C] ">
-          
-        </div>
+        <Tools/>
       </div>
       </Container>
     </div>
