@@ -32,7 +32,7 @@ const Header = () => {
           
           {/* Logo Part */}
           <div className="w-[150px]">
-            <Images imgSrc={Logo} />
+            <Images imgSrc={Logo} className={'h-[70px]'}/>
           </div>
 
           {/* Nav Items - Desktop */}

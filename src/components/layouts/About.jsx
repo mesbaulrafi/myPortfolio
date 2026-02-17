@@ -3,12 +3,12 @@ import Container from "../Container";
 import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { LiaGoogle } from "react-icons/lia";
 import Tools from "./Tools";
-
+// Logo Images 
 import Android from "/src/assets/android.png";
 import Angular from "/src/assets/angular.png";
 import Bootstrap from "/src/assets/bootstrap.png";
 import Vue from "/src/assets/vue.png";
-import ReactLogo from "/src/assets/react.png";
+import ReactLogo from "/src/assets/reactLogo.png";
 import Mongodb from "/src/assets/mongodb.png";
 import Laravel from "/src/assets/laravel.png";
 import Node from "/src/assets/nodejs.png";
@@ -19,7 +19,7 @@ import Node from "/src/assets/nodejs.png";
 
 const About = () => {
   return (
-    <div className="bg-[#111111] py-20 text-white"> 
+    <div className="bg-[#121216] py-20 text-white"> 
       <Container>
         <div className="flex justify-between items-start">
           {/* Left Side: About Text */}
@@ -65,9 +65,9 @@ const About = () => {
           <div className="flex items-center h-[180px] gap-4 mb-5">
             <Tools toolsImg={Android} toolsTitle='Android' ToolsText='2 Year Experience'/>
             <Tools toolsImg={Angular} toolsTitle='Angular' ToolsText='1 Year Experience'/>
+            <Tools toolsImg={ReactLogo} toolsTitle='React' ToolsText='1 Year Experience'className={'animate-[spin_10s_linear_infinite]'}/>
             <Tools toolsImg={Bootstrap} toolsTitle='Bootstrap' ToolsText='3 Year Experience'/>
             <Tools toolsImg={Vue} toolsTitle='Vue' ToolsText='2 Year Experience'/>
-            <Tools toolsImg={ReactLogo} toolsTitle='React' ToolsText='1 Year Experience'/>
           </div>
           
           {/* Second Row - Centered */}

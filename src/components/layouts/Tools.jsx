@@ -5,15 +5,15 @@ import Android from "/src/assets/android.png"
 
 
 
-const Tools = ({toolsImg,toolsTitle,ToolsText}) => {
+const Tools = ({toolsImg,toolsTitle,ToolsText,className}) => {
   return (
     <div className="">
       
         <div className="bg-[#17171C] p-6 w-60 flex items-center rounded-sm">
-          <div className="">
-            <Images imgSrc={toolsImg} className={'pr-4'}/>
+          <div className={``}>
+            <Images imgSrc={toolsImg} className={`${className}`}/>
             </div>
-          <div className="">
+          <div className="pl-4">
             <h4 className="">{toolsTitle}</h4>
             <p className="">{ToolsText}</p>
           </div>
