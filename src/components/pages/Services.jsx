@@ -23,7 +23,6 @@ const Services = () => {
               category leading brand experiences that have meaning.
             </p>
           </div>
-          {/* Services Grid - Mobile: 1 col, Tablet: 2 col, Desktop: 3 col */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
             {/* Awesome Support Card */}
             <div className="bg-[#1b1b21] p-8 rounded-lg  ">
