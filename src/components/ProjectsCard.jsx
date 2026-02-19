@@ -13,6 +13,7 @@ const ProjectsCard = ({
 }) => {
   return (
     <>
+    {/* Project Card  */}
       <div className="">
         <div className="group bg-[#17171c] rounded-xl overflow-hidden border border-gray-800  transition hover:-translate-y-2 duration-300">
           <div className="relative overflow-hidden">
