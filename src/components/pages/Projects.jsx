@@ -14,6 +14,7 @@ const Projects = () => {
   return (
     <div className="py-24 bg-[#121217] text-white font-sans">
       <Container>
+        {/* Project Text Part */}
         <div className="text-center pb-16 px-4">
           <h5 className="text-[#69C380] bg-[#69c37f1f] inline-block px-3 py-1 rounded text-[10px] font-bold uppercase tracking-[2px] mb-4">
             Work
