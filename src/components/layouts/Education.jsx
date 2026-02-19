@@ -72,7 +72,7 @@ const Education = () => {
 
             {/* Right Side */}
             <div className="w-full md:w-2/3 flex flex-col">
-              {/* Experience Item 1 */}
+              {/* Experience Item One */}
               <div className="p-6 md:p-8 border-b border-[#2e2e3550]">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
                   <h5 className="text-lg font-semibold text-gray-200">— ABC themes - Web Design IT Company</h5>
@@ -91,13 +91,13 @@ const Education = () => {
                 </div>
               </div>
 
-              {/* Experience Item 2 */}
+              {/* Experience Item Two */}
               <div className="flex justify-between items-center p-5 md:px-8 border-b border-[#2e2e3550] text-gray-400">
                 <h5 className="text-sm md:text-base">+ DEF Themes - Creative full stack web design</h5>
                 <span className="text-[#3fc1c9] font-mono text-sm">2016 - 2019</span>
               </div>
 
-              {/* Experience Item 3 */}
+              {/* Experience Item Three */}
               <div className="flex justify-between items-center p-5 md:px-8 text-gray-400">
                 <h5 className="text-sm md:text-base">+ GHI Themes - Web & App IT Company</h5>
                 <span className="text-[#3fc1c9] font-mono text-sm">2013 - 2015</span>
