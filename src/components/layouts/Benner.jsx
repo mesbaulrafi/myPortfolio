@@ -6,8 +6,7 @@ import Container from "../Container";
 
 const Benner = () => {
   return (
-    // 'min-h-screen' use kora hoyeche jate puruta screen cover kore
-    // 'pt-32' dewa hoyeche jate Header-er niche content thake
+  
     <div className="bg-[url('/src/assets/bennerBg.png')] bg-center bg-cover bg-no-repeat min-h-screen flex items-center pt-32 lg:pt-20">
       <Container>
         <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -21,10 +20,10 @@ const Benner = () => {
           {/* Banner Text Part */}
           <div className="w-full lg:w-[500px] text-center  mt-10 lg:mt-0 ">
             <h5 className="text-[#8B9CB7] text-[20px] font-medium mb-4">
-              Hi, I'm David Williamson
+              Hi, I'm Mesbaul Haque Rafi
             </h5>
             <h1 className="text-white text-[40px] md:text-[54px] lg:text-[64px] font-bold leading-tight mb-8">
-              I'm a freelance <span className="text-[#00BCD4] border-b-4 border-yellow-500">React</span> Developer
+              I'm a Font-End <span className="text-[#00BCD4] border-b-4 border-yellow-500">React</span> Developer
             </h1>
             {/* Benner Btn  */}
             <Button 

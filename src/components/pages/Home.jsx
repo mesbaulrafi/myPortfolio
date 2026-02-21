@@ -5,6 +5,7 @@ import Services from './Services'
 import Education from '../layouts/Education'
 import Input from '../layouts/Input'
 import Projects from './Projects'
+import Contact from '../layouts/Contact'
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
    <Education/>
    <Input/>
    <Projects/>
+   <Contact/>
    </>
   )
 }
