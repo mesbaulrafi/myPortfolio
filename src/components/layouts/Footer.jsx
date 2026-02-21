@@ -37,8 +37,8 @@ const Footer = () => {
               <ul>
                 <li className="pb-6 font-medium text-xl underline decoration-transparent">Company</li>
                 <li className="text-lg opacity-40 pb-3"><Link to="/">Home</Link></li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/">About</Link></li>
-                <li className="text-lg opacity-40"><Link to="/">Services</Link></li>
+                <li className="text-lg opacity-40 pb-3"><Link to="/about">About</Link></li>
+                <li className="text-lg opacity-40"><Link to="/services">Services</Link></li>
               </ul>
             </div>
 
