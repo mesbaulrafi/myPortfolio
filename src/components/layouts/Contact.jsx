@@ -3,7 +3,7 @@ import Container from "../Container";
 import Button from "../Button";
 import Images from "../Images";
 import ContactMan from "/src/assets/contactMan.png";
-import { FiPhone, FiMail } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 
 const Contact = () => {
   return (
@@ -19,7 +19,6 @@ const Contact = () => {
               Always available for freelancing if the right project comes along,
               Feel free to contact me.
             </p>
-
             <form className="space-y-2">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Name */}
@@ -59,7 +58,6 @@ const Contact = () => {
                   />
                 </div>
               </div>
-
               {/* Message */}
               <div className="flex flex-col gap-2">
                 <label className="text-gray-300 text-sm">Message</label>
@@ -78,16 +76,13 @@ const Contact = () => {
               />
             </form>
           </div>
-
           {/* Contact Info & Illustration */}
           <div className="w-full lg:w-1/3 flex flex-col justify-start gap-10 z-10">
             {/* Top Illustration */}
             <div className="flex justify-end">
               <Images imgSrc={ContactMan} className={"w-28"} />
             </div>
-
             {/* Contact Details */}
-
             <div className="flex items-center gap-4 pt-8">
               <div className="bg-[#1e1e26] p-4 rounded-md text-gray-400">
                 <FiMail size={24} />
