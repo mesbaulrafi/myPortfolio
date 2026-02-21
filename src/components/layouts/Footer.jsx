@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Link import kora hoyeche
+import { Link } from "react-router-dom"; 
 import Container from "../Container";
 import Images from "../Images";
 import Logo from "/src/assets/Logo.png";
@@ -37,8 +37,8 @@ const Footer = () => {
               <ul>
                 <li className="pb-6 font-medium text-xl underline decoration-transparent">Company</li>
                 <li className="text-lg opacity-40 pb-3"><Link to="/">Home</Link></li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/about">About</Link></li>
-                <li className="text-lg opacity-40"><Link to="/services">Services</Link></li>
+                <li className="text-lg opacity-40 pb-3"><Link to="/">About</Link></li>
+                <li className="text-lg opacity-40"><Link to="/">Services</Link></li>
               </ul>
             </div>
 
@@ -46,9 +46,9 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="pb-6 font-medium text-xl">Information</li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/resume">Resume</Link></li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/client-say">Client Say</Link></li>
-                <li className="text-lg opacity-40"><Link to="/projects">Projects</Link></li>
+                <li className="text-lg opacity-40 pb-3"><Link to="/">Resume</Link></li>
+                <li className="text-lg opacity-40 pb-3"><Link to="/">Client Say</Link></li>
+                <li className="text-lg opacity-40"><Link to="/">Projects</Link></li>
               </ul>
             </div>
 
@@ -56,9 +56,9 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="pb-6 font-medium text-xl">More info</li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/blogs">Blogs</Link></li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/contact">Contact</Link></li>
-                <li className="text-lg opacity-40"><Link to="/terms">Terms & condition</Link></li>
+                <li className="text-lg opacity-40 pb-3"><Link to="/">Blogs</Link></li>
+                <li className="text-lg opacity-40 pb-3"><Link to="/">Contact</Link></li>
+                <li className="text-lg opacity-40"><Link to="/">Terms & condition</Link></li>
               </ul>
             </div>
 
