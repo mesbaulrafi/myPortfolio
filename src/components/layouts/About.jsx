@@ -5,7 +5,7 @@ import { LiaGoogle } from "react-icons/lia";
 import Tools from "./Tools";
 // Logo Images 
 import Android from "/src/assets/android.png";
-import Angular from "/src/assets/angular.png"
+import AngularLogo from "/src/assets/Angular.png"
 import Bootstrap from "/src/assets/bootstrap.png";
 import Vue from "/src/assets/vue.png";
 import ReactLogo from "/src/assets/reactLogo.png";
@@ -64,7 +64,7 @@ const About = () => {
           {/* First Row */}
           <div className="flex items-center h-[180px] gap-4 mb-5">
             <Tools toolsImg={Android} toolsTitle='Android' ToolsText='2 Year Experience'/>
-            <Tools toolsImg={Angular} toolsTitle='Angular' ToolsText='1 Year Experience'/>
+            <Tools toolsImg={AngularLogo} toolsTitle='Angular' ToolsText='1 Year Experience'/>
             <Tools toolsImg={ReactLogo} toolsTitle='React' ToolsText='1 Year Experience'className={'animate-[spin_10s_linear_infinite]'}/>
             <Tools toolsImg={Bootstrap} toolsTitle='Bootstrap' ToolsText='3 Year Experience'/>
             <Tools toolsImg={Vue} toolsTitle='Vue' ToolsText='2 Year Experience'/>
