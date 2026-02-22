@@ -5,7 +5,7 @@ import { LiaGoogle } from "react-icons/lia";
 import Tools from "./Tools";
 // Logo Images 
 import Android from "/src/assets/android.png";
-import Angular from "/src/assets/angular.png";
+import Angular from "/src/assets/angular.png"
 import Bootstrap from "/src/assets/bootstrap.png";
 import Vue from "/src/assets/vue.png";
 import ReactLogo from "/src/assets/reactLogo.png";
