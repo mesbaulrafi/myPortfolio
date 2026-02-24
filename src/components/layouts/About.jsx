@@ -70,7 +70,7 @@ const About = () => {
             <Tools toolsImg={Vue} toolsTitle='Vue' ToolsText='2 Year Experience'/>
           </div>
           
-          {/* Second Row - Centered */}
+          {/* Second Row _ Centered */}
           <div className="flex justify-center gap-4">
             <Tools toolsImg={Mongodb} toolsTitle='Mongodb' ToolsText='3 Months Experience'/>
             <Tools toolsImg={Laravel} toolsTitle='Laravel' ToolsText='1 Year Experience'/>
