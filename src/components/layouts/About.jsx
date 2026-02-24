@@ -22,7 +22,7 @@ const About = () => {
     <div className="bg-[#121216] py-20 text-white"> 
       <Container>
         <div className="flex justify-between items-start">
-          {/* Left Side: About Text */}
+          {/* Left Side: About Text   */}
           <div className="w-[45%]">
             <h4 className="bg-[#FFC835] text-black px-2 py-1 text-xl font-bold inline-block mb-6">
               Personal Details
