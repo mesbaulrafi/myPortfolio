@@ -15,8 +15,6 @@ import Node from "/src/assets/nodejs.png";
 
 
 
-
-
 const About = () => {
   return (
     <div className="bg-[#121216] py-20 text-white"> 
