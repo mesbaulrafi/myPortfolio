@@ -65,7 +65,7 @@ const About = () => {
           <div className="flex items-center h-[180px] gap-4 mb-5">
             <Tools toolsImg={Android} toolsTitle='Android' ToolsText='2 Year Experience'/>
             <Tools toolsImg={AngularLogo} toolsTitle='Angular' ToolsText='1 Year Experience'/>
-            <Tools toolsImg={ReactLogo} toolsTitle='React' ToolsText='1 Year Experience'className={'animate-[spin_10s_linear_infinite]'}/>
+            <Tools toolsImg={ReactLogo} toolsTitle='React' ToolsText='1 Year Experience'className={'animate-[spin_8s_linear_infinite]'}/>
             <Tools toolsImg={Bootstrap} toolsTitle='Bootstrap' ToolsText='3 Year Experience'/>
             <Tools toolsImg={Vue} toolsTitle='Vue' ToolsText='2 Year Experience'/>
           </div>
