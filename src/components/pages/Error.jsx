@@ -13,7 +13,7 @@ const Error = () => {
         className="h-full w-full object-cover sm:object-fill" 
       />
 
-      {/* Button Section - Centered using absolute positioning */}
+      {/* Button Section */}
       <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex justify-center">
         <Link
           to="/"
