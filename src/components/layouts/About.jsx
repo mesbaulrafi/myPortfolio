@@ -49,10 +49,10 @@ const About = () => {
               <p>Interest</p>
             </div>
             <div className="text-gray-400 space-y-3">
-              <p><span className="mr-6">:</span> 06 june 1989</p>
-              <p><span className="mr-6">:</span> English - French - German</p>
-              <p><span className="mr-6">:</span> USA</p>
-              <p><span className="mr-6">:</span> Music, Reading, journey</p>
+              <p><span className="mr-6">:</span> 27 Dec 2004</p>
+              <p><span className="mr-6">:</span> English - Hindi - Urdu</p>
+              <p><span className="mr-6">:</span> Bangladeshi</p>
+              <p><span className="mr-6">:</span> Music, Reading, Travel</p>
             </div>
           </div>
         </div>
