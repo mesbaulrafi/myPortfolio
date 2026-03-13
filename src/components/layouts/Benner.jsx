@@ -1,13 +1,13 @@
 import React from "react";
 import Images from "../Images";
-import Man from "/src/assets/man.png";
+import Man from "/src/assets/gitPhoto.png";
 import Button from "../Button";
 import Container from "../Container"; 
 
 const Benner = () => {
   return (
   
-    <div className="bg-[url('/src/assets/bennerBg.png')] bg-center bg-cover bg-no-repeat min-h-screen flex items-center pt-32 lg:pt-20">
+    <div className="bg-[url('/src/assets/bennerBg.png')] bg-center bg-cover bg-no-repeat min-h-screen flex items-center pt-32 lg:pt-37">
       <Container>
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Images Part */}
