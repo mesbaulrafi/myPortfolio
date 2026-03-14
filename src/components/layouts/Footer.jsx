@@ -7,16 +7,17 @@ import { FiFacebook, FiTwitter, FiGithub, FiInstagram } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="bg-[#172d51] py-25 text-white">
+    <div className="bg-[#172d51] py-16 md:py-25 text-white">
       <Container>
-        <div className="flex items-center justify-between">
+        
+        <div className="flex flex-col md:flex-row justify-between gap-y-10 md:gap-y-0">
           
           {/* Logo & Description Section */}
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <Link to="/">
               <Images imgSrc={Logo} className={"w-[70px]"} />
             </Link>
-            <p className="w-[437px] text-lg opacity-40 py-6">
+            <p className="w-full md:w-[437px] text-lg opacity-40 py-6">
               In an ideal world this text wouldn’t exist, a client would
               acknowledge the importance of having web copy before the design
               starts.
@@ -30,7 +31,8 @@ const Footer = () => {
           </div>
 
           {/* Footer Menu Section */}
-          <div className="w-1/2 flex items-center justify-between">
+          {/* মেনুগুলো মোবাইলে গ্রিড আকারে সাজবে */}
+          <div className="w-full md:w-1/2 grid grid-cols-2 md:flex md:items-center md:justify-between gap-y-8">
             
             {/* Company Column */}
             <div>
