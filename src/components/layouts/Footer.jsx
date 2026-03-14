@@ -31,7 +31,6 @@ const Footer = () => {
           </div>
 
           {/* Footer Menu Section */}
-          {/* মেনুগুলো মোবাইলে গ্রিড আকারে সাজবে */}
           <div className="w-full md:w-1/2 grid grid-cols-2 md:flex md:items-center md:justify-between gap-y-8">
             
             {/* Company Column */}
