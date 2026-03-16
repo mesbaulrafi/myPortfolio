@@ -98,7 +98,7 @@ const Header = () => {
             </Link>
           )}
 
-          {/* Hamburger — শুধু mobile & tablet এ (below 1024px) */}
+          {/* Hamburger — for mobile & tablet (below 1024px) */}
           {isMobile && (
             <button
               onClick={() => setIsOpen(!isOpen)}
