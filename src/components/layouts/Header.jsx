@@ -77,7 +77,7 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Desktop Nav — শুধু lg+ এ */}
+          {/* Desktop Nav —  lg+  */}
           {!isMobile && (
             <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
               <NavLink to="/" className={navLinkStyle}>Home</NavLink>
@@ -89,7 +89,7 @@ const Header = () => {
             </div>
           )}
 
-          {/* Hire Me — শুধু lg+ এ */}
+          {/* Hire Me */}
           {!isMobile && (
             <Link to="/contact">
               <button className="flex items-center gap-x-2 text-[#00BCD4] font-bold py-2.5 px-6 bg-white rounded-md hover:bg-[#00BCD4] hover:text-white transition-all duration-300 shadow-md">
