@@ -98,7 +98,7 @@ const Header = () => {
             </Link>
           )}
 
-          {/* Hamburger — for mobile & tablet*/}
+          {/* Hamburger mobile & tablet*/}
           {isMobile && (
             <button
               onClick={() => setIsOpen(!isOpen)}
