@@ -77,7 +77,7 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Desktop Nav —  lg+  */}
+          {/* Desktop Nav  */}
           {!isMobile && (
             <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
               <NavLink to="/" className={navLinkStyle}>Home</NavLink>
