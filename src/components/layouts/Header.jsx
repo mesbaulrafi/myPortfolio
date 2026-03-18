@@ -139,29 +139,7 @@ const Header = () => {
               paddingBottom: '20px',
               backgroundColor: '#0b1b28',
             }}>
-              <ul style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: '20px',
-                margin: 0,
-                padding: 0,
-                listStyle: 'none',
-              }}>
-                <li><NavLink to="/" onClick={() => setIsOpen(false)} className={navLinkStyle}>Home</NavLink></li>
-                <li><NavLink to="/about" onClick={() => setIsOpen(false)} className={navLinkStyle}>About</NavLink></li>
-                <li><NavLink to="/services" onClick={() => setIsOpen(false)} className={navLinkStyle}>Services</NavLink></li>
-                <li><NavLink to="/resume" onClick={() => setIsOpen(false)} className={navLinkStyle}>Resume</NavLink></li>
-                <li><NavLink to="/projects" onClick={() => setIsOpen(false)} className={navLinkStyle}>Projects</NavLink></li>
-                <li><NavLink to="/contact" onClick={() => setIsOpen(false)} className={navLinkStyle}>Contact</NavLink></li>
-                <li style={{ marginTop: '8px' }}>
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    <button className="flex items-center gap-x-2 bg-[#00BCD4] text-white font-bold py-2.5 px-8 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300">
-                      Hire Me! <FaAnglesRight className="text-sm" />
-                    </button>
-                  </Link>
-                </li>
-              </ul>
+              
             </div>
           </div>
         )}
