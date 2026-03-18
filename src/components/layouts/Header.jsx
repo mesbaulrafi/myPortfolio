@@ -41,7 +41,7 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
-  // Lock body scroll when mobile menu is open
+  // scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
@@ -98,7 +98,7 @@ const Header = () => {
             </Link>
           )}
 
-          {/* Hamburger — for mobile & tablet (below 1024px) */}
+          {/* Hamburger — for mobile & tablet*/}
           {isMobile && (
             <button
               onClick={() => setIsOpen(!isOpen)}
