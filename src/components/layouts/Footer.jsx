@@ -22,12 +22,7 @@ const Footer = () => {
               acknowledge the importance of having web copy before the design
               starts.
             </p>
-            <div className="flex items-center gap-x-3.5 text-lg opacity-40">
-              <Link to="/"><i><FiFacebook /></i></Link>
-              <Link to="/"><i><FiTwitter /></i></Link>
-              <Link to="/"><i><FiGithub /></i></Link>
-              <Link to="/"><i><FiInstagram /></i></Link>
-            </div>
+            
           </div>
 
           {/* Footer Menu Section */}
