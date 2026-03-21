@@ -8,7 +8,7 @@ const Benner = () => {
   return (
   
     <div className="bg-[url('/src/assets/bennerBg.png')] bg-center bg-cover bg-no-repeat min-h-screen flex items-center pt-32 lg:pt-37">
-      <Container>
+      <div className="w-[1140px] m-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Images Part */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
@@ -34,7 +34,7 @@ const Benner = () => {
             </a>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
