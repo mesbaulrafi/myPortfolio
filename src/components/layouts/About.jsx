@@ -18,7 +18,7 @@ import Node from "/src/assets/nodejs.png";
 const About = () => {
 return (
 <div className="bg-[#121216] py-20 text-white">
-<Container>
+<div className="w-[1140px] m-auto">
 <div className="flex justify-between items-start">
 {/* Left Side: About Text */}
 <div className="w-[45%]">
@@ -75,7 +75,7 @@ by the readable content of a page when looking at its layout.
 <Tools toolsImg={Node} toolsTitle='Node.js' ToolsText='1 Year Experience'/>
 </div>
 </div>
-</Container>
+</div>
 </div>
 );
 };
