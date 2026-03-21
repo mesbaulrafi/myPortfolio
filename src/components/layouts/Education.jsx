@@ -92,7 +92,10 @@ const Education = () => {
               </div>
 
               {/* Experience Item Two */}
-              
+              <div className="flex justify-between items-center p-5 md:px-8 border-b border-[#2e2e3550] text-gray-400">
+                <h5 className="text-sm md:text-base">+ DEF Themes - Creative full stack web design</h5>
+                <span className="text-[#3fc1c9] font-mono text-sm">2016 - 2019</span>
+              </div>
 
               {/* Experience Item Three */}
               <div className="flex justify-between items-center p-5 md:px-8 text-gray-400">
