@@ -98,7 +98,10 @@ const Education = () => {
               </div>
 
               {/* Experience Item Three */}
-             
+              <div className="flex justify-between items-center p-5 md:px-8 text-gray-400">
+                <h5 className="text-sm md:text-base">+ GHI Themes - Web & App IT Company</h5>
+                <span className="text-[#3fc1c9] font-mono text-sm">2013 - 2015</span>
+              </div>
             </div>
           </div>
 
