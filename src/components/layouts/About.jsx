@@ -4,6 +4,15 @@ import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { LiaGoogle } from "react-icons/lia";
 import Tools from "./Tools";
 // Logo Images
+import Android from "/src/assets/android.png";
+import AngularLogo from "/src/assets/Angular.png"
+import Bootstrap from "/src/assets/bootstrap.png";
+import Vue from "/src/assets/vue.png";
+import ReactLogo from "/src/assets/reactLogo.png";
+import Mongodb from "/src/assets/mongodb.png";
+import Laravel from "/src/assets/laravel.png";
+import Node from "/src/assets/nodejs.png";
+
 
 
 const About = () => {
