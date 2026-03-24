@@ -8,7 +8,7 @@ import Right from "/src/assets/right.png";
 const Services = () => {
   return (
     <div className="py-25 bg-[#16161b] text-white">
-      <Container>
+      <div className="w-[1140px] m-auto">
         <div>
           {/* Services Header Text */}
           <div className="text-center pb-12 lg:pb-18 px-4">
@@ -59,7 +59,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

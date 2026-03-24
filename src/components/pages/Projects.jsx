@@ -13,7 +13,7 @@ import ProjectsCard from "../ProjectsCard";
 const Projects = () => {
   return (
     <div className="py-24 bg-[#121217] text-white font-sans">
-      <Container>
+      <div className="w-[1140px] m-auto">
         {/* Project Text Part */}
         <div className="text-center pb-16 px-4">
           <h5 className="text-[#69C380] bg-[#69c37f1f] inline-block px-3 py-1 rounded text-[10px] font-bold uppercase tracking-[2px] mb-4">
@@ -33,7 +33,7 @@ const Projects = () => {
             {/* Project Three */}
             <ProjectsCard ProjectsImg={Finance} ProjectsTitle={'Finance'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://mesbaulrafi.github.io/mobailFinance/'}/>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
