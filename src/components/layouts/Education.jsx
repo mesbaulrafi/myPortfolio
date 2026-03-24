@@ -126,7 +126,7 @@ export default function EducationExperience() {
 
       <div className="edu-exp-wrapper">
         <div className="section-badge">LIFE TIME</div>
-        <h2 className="main-heading">Education &amp; Experience</h2>
+        <h2 className="main-heading font-roboto">Education & Experience</h2>
         <p className="main-sub">
           We craft digital, graphic and dimensional thinking, to create category
           leading brand experiences that have meaning.
