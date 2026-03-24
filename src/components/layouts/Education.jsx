@@ -73,7 +73,23 @@ const Education = () => {
             {/* Right Side */}
             <div className="w-full md:w-2/3 flex flex-col">
               {/* Experience Item One */}
-              
+              <div className="p-6 md:p-8 border-b border-[#2e2e3550]">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
+                  <h5 className="text-lg font-semibold text-gray-200">— ABC themes - Web Design IT Company</h5>
+                  <span className="text-[#3fc1c9] font-mono text-sm">2020 - 2021</span>
+                </div>
+                <div className="sm:pl-8">
+                  <p className="text-[#8B9CB7] text-sm mb-2 italic">- Delivered quality code by applying the best development practices</p>
+                  <p className="text-white text-xs md:text-sm font-bold mb-4 uppercase tracking-tighter">A-000 Chambers Street, Suite z-701 New York, NY 10007, United States</p>
+                  <div className="flex flex-wrap gap-2">
+                    {["ANGULAR", "REACT", "PYTHON"].map((skill) => (
+                      <span key={skill} className="bg-[#1e2633] text-[#4d79ff] text-[10px] px-3 py-1 rounded-sm font-bold">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
               {/* Experience Item Two */}
               <div className="flex justify-between items-center p-5 md:px-8 border-b border-[#2e2e3550] text-gray-400">
