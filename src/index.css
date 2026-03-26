@@ -24,16 +24,7 @@
           background: #6ee7d410;
         }
 
-        .main-heading {
-          font-family: 'Roboto', serif;
-          font-size: 32px;
-          color: #eef0f5;
-          text-align: center;
-          margin: 0 0 14px;
-          font-weight: 400;
-          letter-spacing: -0.01em;
-        }
-
+        
         .main-sub {
           font-size: 14px;
           color: #7a8499;
