@@ -12,17 +12,7 @@
           color: #d0d6e0;
         }
 
-        .section-badge {
-          font-size: 10px;
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          color: #6ee7d4;
-          border: 1px solid #6ee7d455;
-          padding: 4px 14px;
-          border-radius: 20px;
-          margin-bottom: 20px;
-          background: #6ee7d410;
-        }
+        
 
         .main-heading {
           font-family: 'Roboto', serif;
