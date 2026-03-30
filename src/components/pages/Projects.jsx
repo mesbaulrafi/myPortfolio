@@ -13,7 +13,7 @@ import ProjectsCard from "../ProjectsCard";
 const Projects = () => {
   return (
     <div className="py-24 bg-[#121217] text-white font-sans">
-      <div className="w-[1140px] m-auto">
+      <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
         {/* Project Text Part */}
         <div className="text-center pb-16 px-4">
           <h5 className="text-[#69C380] bg-[#69c37f1f] inline-block px-3 py-1 rounded text-[10px] font-bold uppercase tracking-[2px] mb-4">
@@ -25,7 +25,7 @@ const Projects = () => {
             category leading brand experiences that have meaning .
           </p>
         </div>
-        <div className="flex items-center justify-between gap-7">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-7">
             {/* Project One */}
             <ProjectsCard ProjectsImg={Orabi} ProjectsTitle={'E-commerce'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://orebi-iota-mocha.vercel.app/'}/>
             {/* Project Two */}

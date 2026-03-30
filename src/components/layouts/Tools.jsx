@@ -9,11 +9,11 @@ const Tools = ({toolsImg,toolsTitle,ToolsText,className}) => {
   return (
     <div className="">
       
-        <div className="bg-[#17171C] p-6 w-60 flex items-center rounded-sm">
+        <div className="bg-[#17171C] p-6 lg:w-60 flex items-center rounded-sm">
           <div className={``}>
             <Images imgSrc={toolsImg} className={`${className}`}/>
             </div>
-          <div className="pl-4">
+          <div className="pl-4 ">
             <h4 className="">{toolsTitle}</h4>
             <p className="">{ToolsText}</p>
           </div>

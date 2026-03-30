@@ -8,7 +8,7 @@ import Right from "/src/assets/right.png";
 const Services = () => {
   return (
     <div className="py-25 bg-[#16161b] text-white">
-      <div className="w-[1140px] m-auto">
+      <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
         <div>
           {/* Services Header Text */}
           <div className="text-center pb-12 lg:pb-18 px-4">
