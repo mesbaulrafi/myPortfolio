@@ -113,7 +113,7 @@ const Header = () => {
                 lineHeight: 1,
                 display: 'flex',
                 alignItems: 'center',
-                color: 'black',
+                color: 'white',
               }}
             >
               {isOpen ? <FiAlignJustify /> : <FiAlignJustify />}

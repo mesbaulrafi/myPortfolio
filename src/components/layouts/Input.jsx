@@ -5,7 +5,7 @@ import Button from "../Button";
 const Input = () => {
   return (
     <div className="bg-[url('/src/assets/inputeBG.png')] bg-no-repeat bg-center bg-cover py-16 md:py-25">
-      <div className="w-[1140px] m-auto">
+      <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
           
           {/* Input Text Section */}

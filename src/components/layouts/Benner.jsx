@@ -6,10 +6,28 @@ import Container from "../Container";
 
 const Benner = () => {
   return (
+  <>
+
   
-    <div className="bg-[url('/src/assets/bennerBg.png')] bg-center bg-cover bg-no-repeat min-h-screen flex items-center pt-32 lg:pt-37">
-      <div className="w-[1140px] m-auto">
+    <div className="bg-[url('/src/assets/bennerBg.png')] bg-center bg-cover bg-no-repeat flex items-center pt-32 lg:pt-37">
+      <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between">
+            {/* Banner Text Part */}
+          <div className="w-full lg:w-[500px] text-center  mt-10 lg:mt-0 lg:hidden">
+            <h5 className="text-[#8B9CB7] text-[20px] font-medium mb-4">
+              Hi, I'm Mesbaul Haque Rafi
+            </h5>
+            <h1 className="text-white text-[40px] md:text-[54px] lg:text-[64px] font-bold leading-tight mb-8">
+              I'm a Font-End <span className="text-[#00BCD4] border-b-4 border-yellow-500">React</span> Developer
+            </h1>
+            {/* Benner Btn  */}
+            <a href="/public/Mesbaul Rafi(Resume).pdf" download={'Resume-MesbaulRafi'}>
+              <Button 
+              btnText={"Download CV"}  
+              className="bg-[#00BCD4] text-white px-8 py-3 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300"
+            />
+            </a>
+          </div>
           {/* Images Part */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
             <div className="max-w-[500px]">
@@ -18,7 +36,7 @@ const Benner = () => {
           </div>
 
           {/* Banner Text Part */}
-          <div className="w-full lg:w-[500px] text-center  mt-10 lg:mt-0 ">
+          <div className="w-full lg:w-[500px] text-center  mt-10 lg:mt-0 hidden lg:block">
             <h5 className="text-[#8B9CB7] text-[20px] font-medium mb-4">
               Hi, I'm Mesbaul Haque Rafi
             </h5>
@@ -36,6 +54,9 @@ const Benner = () => {
         </div>
       </div>
     </div>
+
+
+    </>
   );
 };
 
