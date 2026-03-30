@@ -8,7 +8,7 @@ import { FiMail } from "react-icons/fi";
 const Contact = () => {
   return (
     <div className="bg-[#17171c] py-27">
-      <div className="w-[1140px] m-auto">
+      <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
         <div className="bg-[url('/src/assets/contactImg.png')] bg-center bg-cover bg-no-repeat p-8 lg:p-8 rounded-lg flex flex-col lg:flex-row gap-16  ">
           {/* Form Section */}
           <div className="w-full lg:w-2/3 z-10">
@@ -20,7 +20,7 @@ const Contact = () => {
               Feel free to contact me.
             </p>
             <form className="space-y-2">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                 {/* Name */}
                 <div className="flex flex-col gap-2">
                   <label className="text-gray-300 text-sm">Name</label>
@@ -80,7 +80,7 @@ const Contact = () => {
           <div className="w-full lg:w-1/3 flex flex-col justify-start gap-10 z-10">
             {/* Top Illustration */}
             <div className="flex justify-end">
-              <Images imgSrc={ContactMan} className={"w-28"} />
+              <Images imgSrc={ContactMan} className={"lg:w-28 hidden lg:block"} />
             </div>
             {/* Contact Details */}
             <div className="flex items-center gap-4 pt-8">
