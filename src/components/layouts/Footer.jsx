@@ -8,7 +8,7 @@ import { FiFacebook, FiTwitter, FiGithub, FiInstagram } from "react-icons/fi";
 const Footer = () => {
   return (
     <div className="bg-[#172d51] py-16 md:py-25 text-white">
-      <div className="w-[1140px] m-auto">
+      <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
         
         <div className="flex flex-col md:flex-row justify-between gap-y-10 md:gap-y-0">
           
