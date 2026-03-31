@@ -3,7 +3,10 @@ import Container from "../Container";
 import Images from "../Images";
 
 import { FaArrowRight } from "react-icons/fa";
+import CitWeb from "/src/assets/CitWeb.png";
 import Orabi from "/src/assets/orebi.png";
+import Uomo from "/src/assets/uomo.png";
+import Planto from "/src/assets/planto.png";
 import Agency from "/src/assets/agency.png";
 import Finance from "/src/assets/finance.png";
 import { Link } from "react-router-dom";
@@ -27,10 +30,16 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-7">
             {/* Project One */}
-            <ProjectsCard ProjectsImg={Orabi} ProjectsTitle={'E-commerce'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://orebi-iota-mocha.vercel.app/'}/>
+            <ProjectsCard ProjectsImg={CitWeb} ProjectsTitle={'Creative-web'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://creative-web-six.vercel.app/'}/>
             {/* Project Two */}
-            <ProjectsCard ProjectsImg={Agency} ProjectsTitle={'Agency'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://innovate-react-ten.vercel.app/'}/>
+            <ProjectsCard ProjectsImg={Orabi} ProjectsTitle={'Orabi '} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://orebi-iota-mocha.vercel.app/'}/>
             {/* Project Three */}
+            <ProjectsCard ProjectsImg={Planto} ProjectsTitle={'Planto'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://planto-wine.vercel.app/'}/>
+            {/* Project Four */}
+            <ProjectsCard ProjectsImg={Uomo} ProjectsTitle={'Uomo E-commerce'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'Next.Js'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://uomo.vercel.app/'}/>
+            {/* Project Five */}
+            <ProjectsCard ProjectsImg={Agency} ProjectsTitle={'Agency'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://innovate-react-ten.vercel.app/'}/>
+            {/* Project Six */}
             <ProjectsCard ProjectsImg={Finance} ProjectsTitle={'Finance'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://mesbaulrafi.github.io/mobailFinance/'}/>
         </div>
       </div>
