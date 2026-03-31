@@ -3,19 +3,19 @@ import { useState } from "react";
 const educationItems = [
   {
     value: "edu-1",
-    title: " Master Degree",
-    period: "2010 - 2012",
+    title: " BBA in Business Administratioin",
+    period: "2023 ",
     description:
-      "Harvard University is an educational institution that offers graduate, professional, and research programs in the fields of and public health.",
-    location: "Harvard University, Cambridge, MA, United States",
+      " Running student of BBa in Business Asdministration at Govt Edward Collage Pabna. Ihave Complete 3 year of my BBA Course.",
+    location: "Govt Edward Collage Pabna",
     tags: [],
     defaultOpen: true,
   },
   {
     value: "edu-2",
-    title: "BCA college complete course",
-    period: "2007 - 2010",
-    description: "",
+    title: "HSC college complete course",
+    period: "2020 - 2022",
+    description: "I Have Complete My HSC Course From Satbaria Degree Collage Pabna With Commerce Group . ",
     location: "",
     tags: [],
     defaultOpen: false,
@@ -23,8 +23,8 @@ const educationItems = [
   {
     value: "edu-3",
     title: "High / Higher secondary school",
-    period: "1999 - 2007",
-    description: "",
+    period: "2010 - 2020",
+    description: " I Have Commplete My SSC Course From Satbaria High School Pabna With Commerce Group .",
     location: "",
     tags: [],
     defaultOpen: false,
@@ -125,9 +125,9 @@ export default function EducationExperience() {
       
 
       <div className="edu-exp-wrapper">
-        <div className="section-badge">LIFE TIME</div>
-        <h2 className="main-heading font-roboto">Education & Experience</h2>
-        <p className="main-sub">
+        <div className="text-[#69C380] bg-[#69c37f1f] inline-block px-3 py-1 rounded text-sm uppercase tracking-wider">LIFE TIME</div>
+        <h2 className="text-3xl md:text-4xl py-4 font-bold">Education & Experience</h2>
+        <p className="max-w-[550px] mx-auto text-[#D4DBE5] text-base md:text-lg">
           We craft digital, graphic and dimensional thinking, to create category
           leading brand experiences that have meaning.
         </p>
