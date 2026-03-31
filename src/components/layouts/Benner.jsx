@@ -21,7 +21,7 @@ const Benner = () => {
               I'm a Font-End <span className="text-[#00BCD4] border-b-4 border-yellow-500">React</span> Developer
             </h1>
             {/* Benner Btn  */}
-            <a href="/public/Mesbaul Rafi(Resume).pdf" download={'Resume-MesbaulRafi'}>
+            <a href="/public/resumeRafi.pdf" download={'Resume-MesbaulRafi'}>
               <Button 
               btnText={"Download CV"}  
               className="bg-[#00BCD4] text-white px-8 py-3 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300"
