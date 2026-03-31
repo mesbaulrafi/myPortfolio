@@ -83,7 +83,7 @@ const Header = () => {
               <NavLink to="/" className={navLinkStyle}>Home</NavLink>
               <NavLink to="/about" className={navLinkStyle}>About</NavLink>
               <NavLink to="/services" className={navLinkStyle}>Services</NavLink>
-              <NavLink to="/resume" className={navLinkStyle}>Resume</NavLink>
+              {/* <NavLink to="/resume" className={navLinkStyle}>Resume</NavLink> */}
               <NavLink to="/projects" className={navLinkStyle}>Projects</NavLink>
               <NavLink to="/contact" className={navLinkStyle}>Contact</NavLink>
             </div>
@@ -130,12 +130,13 @@ const Header = () => {
               overflow: 'hidden',
               pointerEvents: isOpen ? 'auto' : 'none',
               transition: 'max-height 0.5s ease, opacity 0.4s ease',
+              borderRadius: "15px" ,
             }}
           >
             <div style={{
               borderTop: '1px solid rgba(255,255,255,0.1)',
-              marginTop: '12px',
-              paddingTop: '16px',
+              marginTop: '10px',
+              paddingTop: '10px',
               paddingBottom: '20px',
               backgroundColor: '#0b1b28',
             }}>
@@ -151,7 +152,7 @@ const Header = () => {
                 <li><NavLink to="/" onClick={() => setIsOpen(false)} className={navLinkStyle}>Home</NavLink></li>
                 <li><NavLink to="/about" onClick={() => setIsOpen(false)} className={navLinkStyle}>About</NavLink></li>
                 <li><NavLink to="/services" onClick={() => setIsOpen(false)} className={navLinkStyle}>Services</NavLink></li>
-                <li><NavLink to="/resume" onClick={() => setIsOpen(false)} className={navLinkStyle}>Resume</NavLink></li>
+                {/* <li><NavLink to="/resume" onClick={() => setIsOpen(false)} className={navLinkStyle}>Resume</NavLink></li> */}
                 <li><NavLink to="/projects" onClick={() => setIsOpen(false)} className={navLinkStyle}>Projects</NavLink></li>
                 <li><NavLink to="/contact" onClick={() => setIsOpen(false)} className={navLinkStyle}>Contact</NavLink></li>
                 <li style={{ marginTop: '8px' }}>
