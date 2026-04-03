@@ -10,6 +10,7 @@ const ProjectsCard = ({
   ProjectsTools,
   ProjectsToolsTow,
   ProjectsLink,
+  RepoLink,
 }) => {
   return (
     <>
@@ -30,7 +31,7 @@ const ProjectsCard = ({
                     <FaLink />
                   </li>
                 </Link>
-                <Link to={"https://github.com/mesbaulrafi"}>
+                <Link to={RepoLink}>
                   <li className="p-3 bg-white text-black rounded-full mx-2 hover:text-[#3fc1c9] hover:bg-[#000000]">
                     <FaGithub />
                   </li>

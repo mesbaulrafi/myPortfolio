@@ -30,7 +30,8 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-7">
             {/* Project One */}
-            <ProjectsCard ProjectsImg={CitWeb} ProjectsTitle={'Creative-web'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://creative-web-six.vercel.app/'}/>
+            <ProjectsCard ProjectsImg={CitWeb} ProjectsTitle={'Creative-web'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://creative-web-six.vercel.app/'}
+            RepoLink={'https://github.com/mesbaulrafi/creativeWeb'}/>
             {/* Project Two */}
             <ProjectsCard ProjectsImg={Orabi} ProjectsTitle={'Orabi '} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://orebi-iota-mocha.vercel.app/'}/>
             {/* Project Three */}
