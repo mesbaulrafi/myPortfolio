@@ -33,15 +33,20 @@ const Projects = () => {
             <ProjectsCard ProjectsImg={CitWeb} ProjectsTitle={'Creative-web'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://creative-web-six.vercel.app/'}
             RepoLink={'https://github.com/mesbaulrafi/creativeWeb'}/>
             {/* Project Two */}
-            <ProjectsCard ProjectsImg={Orabi} ProjectsTitle={'Orabi '} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://orebi-iota-mocha.vercel.app/'}/>
+            <ProjectsCard ProjectsImg={Orabi} ProjectsTitle={'Orabi '} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://orebi-iota-mocha.vercel.app/'}
+            RepoLink={'https://github.com/mesbaulrafi/orebi'}/>
             {/* Project Three */}
-            <ProjectsCard ProjectsImg={Planto} ProjectsTitle={'Planto'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://planto-wine.vercel.app/'}/>
+            <ProjectsCard ProjectsImg={Planto} ProjectsTitle={'Planto'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://planto-wine.vercel.app/'}
+            RepoLink={'https://github.com/mesbaulrafi/planto'}/>
             {/* Project Four */}
-            <ProjectsCard ProjectsImg={Uomo} ProjectsTitle={'Uomo E-commerce'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'Next.Js'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://uomo.vercel.app/'}/>
+            <ProjectsCard ProjectsImg={Uomo} ProjectsTitle={'Uomo E-commerce'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'Next.Js'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://uomo.vercel.app/'}
+            RepoLink={'https://github.com/mesbaulrafi/creativeWeb'}/>
             {/* Project Five */}
-            <ProjectsCard ProjectsImg={Agency} ProjectsTitle={'Agency'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://innovate-react-ten.vercel.app/'}/>
+            <ProjectsCard ProjectsImg={Agency} ProjectsTitle={'Agency'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://innovate-react-ten.vercel.app/'}
+            RepoLink={'https://github.com/mesbaulrafi/creativeWeb'}/>
             {/* Project Six */}
-            <ProjectsCard ProjectsImg={Finance} ProjectsTitle={'Finance'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://mesbaulrafi.github.io/mobailFinance/'}/>
+            <ProjectsCard ProjectsImg={Finance} ProjectsTitle={'Finance'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://mesbaulrafi.github.io/mobailFinance/'}
+            RepoLink={'https://github.com/mesbaulrafi/creativeWeb'}/>
         </div>
       </div>
     </div>
