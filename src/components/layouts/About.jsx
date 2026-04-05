@@ -35,13 +35,6 @@ const About = () => {
                             by the readable content of a page when looking at its layout.
                         </p>
                         {/* Social Icons - Circle Style */}
-                        {/* <div className="flex gap-4">
-                            {[FaGithub, FaTwitter, LiaGoogle, FaLinkedinIn].map((Icon, i) => (
-                                <div key={i} className="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-white transition-all cursor-pointer text-gray-400 hover:text-white">
-                                    <Icon size={18} />
-                                </div>
-                            ))}
-                        </div> */}
                         <div className="flex gap-4">
                             {socialLinks.map((item, i) => (
                                 <a 
