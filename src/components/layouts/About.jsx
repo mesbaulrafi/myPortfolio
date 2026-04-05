@@ -16,7 +16,7 @@ import Node from "/src/assets/nodejs.png";
 const socialLinks = [
         { Icon: FaGithub, link: "https://github.com/mesbaulrafi" },
         { Icon: FaTwitter, link: "https://twitter.com/mesbaulrafi" },
-        { Icon: LiaGoogle, link: "mailto:your-email@gmail.com" },
+        // { Icon: LiaGoogle, link: "" },
         { Icon: FaLinkedinIn, link: "https://linkedin.com/in/mesbaulrafi" },
     ];
 
