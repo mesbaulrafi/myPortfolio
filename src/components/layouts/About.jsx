@@ -13,7 +13,12 @@ import Mongodb from "/src/assets/mongodb.png";
 import Laravel from "/src/assets/laravel.png";
 import Node from "/src/assets/nodejs.png";
 
-
+const socialLinks = [
+        { Icon: FaGithub, link: "https://github.com/mesbaulrafi" },
+        { Icon: FaTwitter, link: "https://twitter.com/mesbaul" },
+        { Icon: LiaGoogle, link: "mailto:your-email@gmail.com" },
+        { Icon: FaLinkedinIn, link: "https://linkedin.com/in/mesbaulrafi" },
+    ];
 
 const About = () => {
     return (
@@ -30,11 +35,24 @@ const About = () => {
                             by the readable content of a page when looking at its layout.
                         </p>
                         {/* Social Icons - Circle Style */}
-                        <div className="flex gap-4">
+                        {/* <div className="flex gap-4">
                             {[FaGithub, FaTwitter, LiaGoogle, FaLinkedinIn].map((Icon, i) => (
                                 <div key={i} className="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-white transition-all cursor-pointer text-gray-400 hover:text-white">
                                     <Icon size={18} />
                                 </div>
+                            ))}
+                        </div> */}
+                        <div className="flex gap-4">
+                            {socialLinks.map((item, i) => (
+                                <a 
+                                    key={i} 
+                                    href={item.link} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-white transition-all cursor-pointer text-gray-400 hover:text-white"
+                                >
+                                    <item.Icon size={18} />
+                                </a>
                             ))}
                         </div>
                     </div>

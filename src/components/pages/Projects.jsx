@@ -12,6 +12,7 @@ import Finance from "/src/assets/finance.png";
 import { Link } from "react-router-dom";
 import { FaLink, FaGithub } from "react-icons/fa";
 import ProjectsCard from "../ProjectsCard";
+import Button from "../Button";
 
 const Projects = () => {
   return (
@@ -48,6 +49,7 @@ const Projects = () => {
             <ProjectsCard ProjectsImg={Finance} ProjectsTitle={'Finance'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://mesbaulrafi.github.io/mobailFinance/'}
             RepoLink={'https://github.com/mesbaulrafi/mobailFinance'}/>
         </div>
+        <Button btnText={'View All'} className={'bg-[#00BCD4] text-white px-8 py-3 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300 mt-10 '}/>
       </div>
     </div>
   );
