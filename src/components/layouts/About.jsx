@@ -23,6 +23,20 @@ const socialLinks = [
 const About = () => {
     return (
         <div className="bg-[#121216] py-20 text-white">
+            {/* About Header Text */}
+          <div className="text-center pb-12 lg:pb-18 px-4">
+            <h5 className="text-[#69C380] bg-[#69c37f1f] inline-block px-3 py-1 rounded text-sm uppercase tracking-wider">
+              ABOUT
+            </h5>
+            <h3 className="text-3xl md:text-4xl py-4 font-bold">
+             About Me
+            </h3>
+            <p className="max-w-[550px] mx-auto text-[#D4DBE5] text-base md:text-lg">
+              We craft digital, graphic and dimensional thinking, to create
+              category leading brand experiences that have meaning.
+            </p>
+          </div>
+          {/* About Header Text */}
             <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
                 <div className="grid lg:grid-cols-2 grid-cols-1 items-start gap-y-10">
                     {/* Left Side: About Text */}
