@@ -25,6 +25,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-2">
                   <label className="text-gray-300 text-sm">Name</label>
                   <input
+                    id="name"
                     type="text"
                     placeholder="Your name"
                     className="bg-transparent border border-gray-700 p-2 rounded-md focus:border-cyan-500 outline-none text-white transition-all"
@@ -34,6 +35,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-2">
                   <label className="text-gray-300 text-sm">Email</label>
                   <input
+                  id="email"
                     type="email"
                     placeholder="Your email"
                     className="bg-transparent border border-gray-700 p-2 rounded-md focus:border-cyan-500 outline-none text-white transition-all"
@@ -43,6 +45,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-2">
                   <label className="text-gray-300 text-sm">Subject</label>
                   <input
+                  id="subject"
                     type="text"
                     placeholder="your subject"
                     className="bg-transparent border border-gray-700 p-2 rounded-md focus:border-cyan-500 outline-none text-white transition-all"
@@ -52,6 +55,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-2">
                   <label className="text-gray-300 text-sm">Contact</label>
                   <input
+                  id="contact"
                     type="text"
                     placeholder="Your Number"
                     className="bg-transparent border border-gray-700 p-2 rounded-md focus:border-cyan-500 outline-none text-white transition-all"
@@ -62,6 +66,7 @@ const Contact = () => {
               <div className="flex flex-col gap-2">
                 <label className="text-gray-300 text-sm">Message</label>
                 <textarea
+                id="message"
                   rows="3"
                   placeholder="Enter your message..."
                   className="bg-transparent border border-gray-700 p-2 rounded-md focus:border-cyan-500 outline-none text-white transition-all"
@@ -69,6 +74,7 @@ const Contact = () => {
               </div>
 
               <Button
+              id="subBtn"
                 btnText={"Send message"}
                 className={
                   "bg-[#00BCD4] text-black font-medium py-3 px-8 rounded-md mt-2 hover:bg-[#00acc1] transition-all"
