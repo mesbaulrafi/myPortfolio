@@ -49,7 +49,7 @@ const Footer = () => {
                 <li className="pb-6 font-medium text-xl">Information</li>
                 <li className="text-lg opacity-40 pb-3"><Link to="/">Resume</Link></li>
                 <li className="text-lg opacity-40 pb-3"><Link to="/">Client Say</Link></li>
-                <li className="text-lg opacity-40"><Link to="/">Projects</Link></li>
+                <li className="text-lg opacity-40"><Link to="/projects">Projects</Link></li>
               </ul>
             </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
               <ul>
                 <li className="pb-6 font-medium text-xl">More info</li>
                 <li className="text-lg opacity-40 pb-3"><Link to="/">Blogs</Link></li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/">Contact</Link></li>
+                <li className="text-lg opacity-40 pb-3"><Link to="/contact">Contact</Link></li>
                 <li className="text-lg opacity-40"><Link to="/">Terms & condition</Link></li>
               </ul>
             </div>
