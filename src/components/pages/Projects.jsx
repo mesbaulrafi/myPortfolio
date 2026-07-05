@@ -49,7 +49,7 @@ const Projects = () => {
             <ProjectsCard ProjectsImg={Finance} ProjectsTitle={'Finance'} ProjectsText={'A complete dashboard built using React, Tailwind CSS,.'} ProjectsTools={'React'} ProjectsToolsTow={'Tailwind'} ProjectsLink={'https://mesbaulrafi.github.io/mobailFinance/'}
             RepoLink={'https://github.com/mesbaulrafi/mobailFinance'}/>
         </div>
-        <Button btnText={'View All'} className={'bg-[#00BCD4] text-white px-8 py-3 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300 mt-10 '}/>
+        <Link to={'https://github.com/mesbaulrafi'}><Button btnText={'View All'} className={'bg-[#00BCD4] text-white px-8 py-3 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300 mt-10 '}/></Link>
       </div>
     </div>
   );
