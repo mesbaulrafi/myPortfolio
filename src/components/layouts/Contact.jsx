@@ -77,7 +77,7 @@ const Contact = () => {
               id="subBtn"
                 btnText={"Send message"}
                 className={
-                  "bg-[#fff] text-[#00acc1] font-medium py-3 px-8 rounded-md mt-2 hover:bg-[#00acc1] transition-all"
+                  "bg-white text-[#00BCD4] font-medium py-3 px-8 rounded-md mt-2 hover:bg-[#00BCD4] hover:text-white transition-all duration-300"
                 }
               />
             </form>
