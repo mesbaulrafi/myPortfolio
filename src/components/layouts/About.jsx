@@ -82,16 +82,16 @@ const About = () => {
                 <div className="mt-20">
                     {/* First Row */}
                     <div className="grid lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-5">
-                        <Tools toolsImg={Android} toolsTitle='Android' ToolsText='2 Year Experience' />
+                        <Tools toolsImg={Android} toolsTitle='Android' ToolsText='1 Year Experience' />
                         <Tools toolsImg={AngularLogo} toolsTitle='Angular' ToolsText='1 Year Experience' />
                         <Tools toolsImg={ReactLogo} toolsTitle='React' ToolsText='1 Year Experience' className={'animate-[spin_8s_linear_infinite]'} />
-                        <Tools toolsImg={Bootstrap} toolsTitle='Bootstrap' ToolsText='3 Year Experience' />
+                        <Tools toolsImg={Bootstrap} toolsTitle='Bootstrap' ToolsText='1 Year Experience' />
                     </div>
 
                     {/* Second Row _ Centered */}
                     <div className="grid lg:grid-cols-4 grid-cols-1 sm:grid-cols-2 gap-4">
-                        <Tools toolsImg={Vue} toolsTitle='Vue' ToolsText='2 Year Experience' />
-                        <Tools toolsImg={Mongodb} toolsTitle='Mongodb' ToolsText='3 Months Experience' />
+                        <Tools toolsImg={Vue} toolsTitle='Vue' ToolsText='1 Year Experience' />
+                        <Tools toolsImg={Mongodb} toolsTitle='Mongodb' ToolsText='1 Year Experience' />
                         <Tools toolsImg={Laravel} toolsTitle='Laravel' ToolsText='1 Year Experience' />
                         <Tools toolsImg={Node} toolsTitle='Node.js' ToolsText='1 Year Experience' />
                     </div>
