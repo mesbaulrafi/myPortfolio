@@ -2,61 +2,39 @@ import React from "react";
 import Images from "../Images";
 import Man from "/src/assets/gitPhoto.png";
 import Button from "../Button";
-import Container from "../Container"; 
 
 const Benner = () => {
   return (
-  <>
-
-  
     <div className="bg-[url('/src/assets/bennerBg.png')] bg-center bg-cover bg-no-repeat flex items-center pt-32 lg:pt-37">
       <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between">
-            {/* Banner Text Part */}
-          <div className="w-full lg:w-[500px] text-center  mt-10 lg:mt-0 lg:hidden">
+          
+          {/* Banner Text Part (বাম পাশে থাকবে) */}
+          <div className="w-full lg:w-[500px] text-center lg:text-left mt-10 lg:mt-0">
             <h5 className="text-[#8B9CB7] text-[20px] font-medium mb-4">
               Hi, I'm Mesbaul Haque Rafi
             </h5>
             <h1 className="text-white text-[40px] md:text-[54px] lg:text-[64px] font-bold leading-tight mb-8">
-              I'm a Font-End <span className="text-[#00BCD4] border-b-4 border-yellow-500">React</span> Developer
+              I'm a Front-End <span className="text-[#00BCD4] border-b-4 border-yellow-500">React</span> Developer
             </h1>
-            {/* Benner Btn  */}
             <a href="/public/resumeRafi.pdf" download={'Resume-MesbaulRafi'}>
               <Button 
-              btnText={"Download CV"}  
-              className="bg-[#00BCD4] text-white px-8 py-3 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300"
-            />
+                btnText={"Download CV"}  
+                className="bg-[#00BCD4] text-white px-8 py-3 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300"
+              />
             </a>
           </div>
-          {/* Images Part */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+
+          {/* Images Part (ডান পাশে থাকবে) */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
             <div className="max-w-[500px]">
                <Images imgSrc={Man} imgAlt="Man image" />
             </div>
           </div>
 
-          {/* Banner Text Part */}
-          <div className="w-full lg:w-[500px] text-center  mt-10 lg:mt-0 hidden lg:block">
-            <h5 className="text-[#8B9CB7] text-[20px] font-medium mb-4">
-              Hi, I'm Mesbaul Haque Rafi
-            </h5>
-            <h1 className="text-white text-[40px] md:text-[54px] lg:text-[64px] font-bold leading-tight mb-8">
-              I'm a Font-End <span className="text-[#00BCD4] border-b-4 border-yellow-500">React</span> Developer
-            </h1>
-            {/* Benner Btn  */}
-            <a href="/public/resumeRafi.pdf" download={'Resume-MesbaulRafi'}>
-              <Button 
-              btnText={"Download CV"}  
-              className="bg-[#00BCD4] text-white px-8 py-3 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300"
-            />
-            </a>
-          </div>
         </div>
       </div>
     </div>
-
-
-    </>
   );
 };
 
