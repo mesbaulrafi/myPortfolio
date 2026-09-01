@@ -1,6 +1,6 @@
 import React from "react";
 import Images from "../Images";
-import Man from "/src/assets/gitPhoto.png";
+import Man from "/src/assets/rafi.webp";
 import Button from "../Button";
 import { Typewriter } from 'react-simple-typewriter'; 
 
@@ -11,7 +11,7 @@ const Banner = () => {
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))]"></div>
 
-      <div className="w-full max-w-[1140px] mx-auto px-5 lg:px-0 relative z-10">
+      <div className="w-full max-w-[1140px] mx-auto mt-19 px-5 lg:px-0 relative z-10">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-12">
           
           {/* Left Content (Text) */}
