@@ -87,12 +87,12 @@ const About = () => {
                     mesbaulrafi@gmail.com
                   </a>
                 </li>
-                <li className="flex justify-between items-center text-sm md:text-base">
+                {/* <li className="flex justify-between items-center text-sm md:text-base">
                   <span className="text-zinc-500">Phone</span>
                   <a href="tel:+8801789618818" className="text-emerald-400 hover:text-emerald-300 font-medium transition-colors">
                     +880 1789618818
                   </a>
-                </li>
+                </li> */}
                 <li className="flex justify-between items-center text-sm md:text-base">
                   <span className="text-zinc-500">Languages</span>
                   <span className="text-zinc-200 font-medium">Bengali, English, Hindi</span>
