@@ -9,28 +9,22 @@ import { IoCloseSharp } from "react-icons/io5";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const navRef = useRef(null);
 
-  // Scroll logic
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Detect screen size — 1024px breakpoint
   useEffect(() => {
     const handleResize = () => {
-      const mobile = window.innerWidth < 1024;
-      setIsMobile(mobile);
-      if (!mobile) setIsOpen(false);
+      if (window.innerWidth >= 1024) setIsOpen(false);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Close menu on outside click
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (isOpen && navRef.current && !navRef.current.contains(e.target)) {
@@ -41,134 +35,85 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
-  // scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
 
-  // Active link style
   const navLinkStyle = ({ isActive }) =>
-    [
-      'text-base font-medium uppercase tracking-wide transition-all duration-300 relative inline-block',
-      "after:content-[''] after:absolute after:bottom-[-5px] after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:bg-[#00BCD4] after:transition-all after:duration-300",
-      isActive
-        ? 'text-[#00BCD4] after:w-full'
-        : 'text-white hover:text-[#00BCD4] after:w-0 hover:after:w-full',
-    ].join(' ');
+    `text-sm lg:text-base font-medium transition-colors duration-300 ${
+      isActive ? 'text-zinc-100' : 'text-zinc-400 hover:text-zinc-200'
+    }`;
 
   return (
-    <nav
+    <header
       ref={navRef}
-      style={{ position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 9999 }}
-      className={`transition-all duration-500 ${
-        scrolled ? 'bg-[#0b1b28] py-3 shadow-xl' : 'bg-transparent py-5'
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled 
+          ? 'bg-[#09090b]/80 backdrop-blur-md border-b border-zinc-800/50 py-3 shadow-lg' 
+          : 'bg-transparent py-5 lg:py-6'
       }`}
     >
-      <div style={{ maxWidth: '1140px', margin: '0 auto', padding: '0 16px' }}>
-
-        {/* Top Row */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div className="max-w-[1140px] mx-auto px-5 lg:px-0">
+        <div className="flex items-center justify-between">
 
           {/* Logo */}
-          <div>
-            <Link to="/" onClick={() => setIsOpen(false)}>
-              <Images imgSrc={Logo} className="object-contain h-[50px] lg:h-[60px]" />
-            </Link>
-          </div>
+          <Link to="/" onClick={() => setIsOpen(false)} className="relative z-50">
+            <Images imgSrc={Logo} className="object-contain h-[40px] lg:h-[45px]" />
+          </Link>
 
-          {/* Desktop Nav  */}
-          {!isMobile && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-              <NavLink to="/" className={navLinkStyle}>Home</NavLink>
-              <NavLink to="/about" className={navLinkStyle}>About</NavLink>
-              <NavLink to="/services" className={navLinkStyle}>Services</NavLink>
-              {/* <NavLink to="/resume" className={navLinkStyle}>Resume</NavLink> */}
-              <NavLink to="/projects" className={navLinkStyle}>Projects</NavLink>
-              <NavLink to="/contact" className={navLinkStyle}>Contact</NavLink>
-            </div>
-          )}
+          {/* Desktop Nav */}
+          <nav className="hidden lg:flex items-center gap-8">
+            <NavLink to="/" className={navLinkStyle}>Home</NavLink>
+            <NavLink to="/about" className={navLinkStyle}>About</NavLink>
+            <NavLink to="/services" className={navLinkStyle}>Services</NavLink>
+            <NavLink to="/projects" className={navLinkStyle}>Projects</NavLink>
+            <NavLink to="/contact" className={navLinkStyle}>Contact</NavLink>
+          </nav>
 
-          {/* Hire Me */}
-          {!isMobile && (
+          {/* Desktop Hire Me Button */}
+          <div className="hidden lg:block">
             <Link to="/contact">
-              <button className="flex items-center gap-x-2 text-[#00BCD4] font-bold py-2.5 px-6 bg-white rounded-md hover:bg-[#00BCD4] hover:text-white transition-all duration-300 shadow-md">
-                Hire Me! <FaAnglesRight className="text-sm" />
+              <button className="flex items-center gap-2 bg-zinc-100 text-zinc-950 font-semibold py-2 px-5 rounded-lg hover:bg-white hover:-translate-y-0.5 transition-all duration-300 text-sm">
+                Hire Me <FaAnglesRight className="text-xs" />
               </button>
             </Link>
-          )}
+          </div>
 
-          {/* Hamburger mobile & tablet*/}
-          {isMobile && (
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
-              aria-expanded={isOpen}
-              style={{
-                fontSize: '28px',
-                background: 'none',
-                border: 'none',
-                padding: '6px',
-                cursor: 'pointer',
-                lineHeight: 1,
-                display: 'flex',
-                alignItems: 'center',
-                color: 'white',
-              }}
-            >
-              {isOpen ? <FiAlignJustify /> : <FiAlignJustify />}
-            </button>
-          )}
+          {/* Mobile Menu Toggle Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden relative z-50 text-zinc-300 hover:text-white p-1 transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <IoCloseSharp size={28} /> : <FiAlignJustify size={26} />}
+          </button>
+
         </div>
 
-        {/* Mobile Dropdown */}
-        {isMobile && (
-          <div
-            style={{
-              maxHeight: isOpen ? '500px' : '0px',
-              opacity: isOpen ? 1 : 0,
-              overflow: 'hidden',
-              pointerEvents: isOpen ? 'auto' : 'none',
-              transition: 'max-height 0.5s ease, opacity 0.4s ease',
-              borderRadius: "15px" ,
-            }}
-          >
-            <div style={{
-              borderTop: '1px solid rgba(255,255,255,0.1)',
-              marginTop: '10px',
-              paddingTop: '10px',
-              paddingBottom: '20px',
-              backgroundColor: '#0b1b28',
-            }}>
-              <ul style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: '20px',
-                margin: 0,
-                padding: 0,
-                listStyle: 'none',
-              }}>
-                <li><NavLink to="/" onClick={() => setIsOpen(false)} className={navLinkStyle}>Home</NavLink></li>
-                <li><NavLink to="/about" onClick={() => setIsOpen(false)} className={navLinkStyle}>About</NavLink></li>
-                <li><NavLink to="/services" onClick={() => setIsOpen(false)} className={navLinkStyle}>Services</NavLink></li>
-                {/* <li><NavLink to="/resume" onClick={() => setIsOpen(false)} className={navLinkStyle}>Resume</NavLink></li> */}
-                <li><NavLink to="/projects" onClick={() => setIsOpen(false)} className={navLinkStyle}>Projects</NavLink></li>
-                <li><NavLink to="/contact" onClick={() => setIsOpen(false)} className={navLinkStyle}>Contact</NavLink></li>
-                <li style={{ marginTop: '8px' }}>
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    <button className="flex items-center gap-x-2 bg-[#00BCD4] text-white font-bold py-2.5 px-8 rounded-md hover:bg-white hover:text-[#00BCD4] transition-all duration-300">
-                      Hire Me! <FaAnglesRight className="text-sm" />
-                    </button>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        )}
+        {/* Mobile Dropdown Menu */}
+        <div
+          className={`lg:hidden absolute top-full left-0 w-full bg-[#09090b]/95 backdrop-blur-xl border-b border-zinc-800/50 transition-all duration-400 ease-in-out overflow-hidden ${
+            isOpen ? 'max-h-[500px] opacity-100 py-6' : 'max-h-0 opacity-0 py-0'
+          }`}
+        >
+          <nav className="flex flex-col items-center gap-6 px-5">
+            <NavLink to="/" onClick={() => setIsOpen(false)} className={navLinkStyle}>Home</NavLink>
+            <NavLink to="/about" onClick={() => setIsOpen(false)} className={navLinkStyle}>About</NavLink>
+            <NavLink to="/services" onClick={() => setIsOpen(false)} className={navLinkStyle}>Services</NavLink>
+            <NavLink to="/projects" onClick={() => setIsOpen(false)} className={navLinkStyle}>Projects</NavLink>
+            <NavLink to="/contact" onClick={() => setIsOpen(false)} className={navLinkStyle}>Contact</NavLink>
+            
+            <Link to="/contact" onClick={() => setIsOpen(false)} className="mt-2 w-full max-w-[200px]">
+              <button className="w-full flex justify-center items-center gap-2 bg-zinc-100 text-zinc-950 font-semibold py-3 px-5 rounded-lg hover:bg-white transition-all duration-300 text-sm">
+                Hire Me <FaAnglesRight className="text-xs" />
+              </button>
+            </Link>
+          </nav>
+        </div>
 
       </div>
-    </nav>
+    </header>
   );
 };
 
