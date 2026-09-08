@@ -1,72 +1,85 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
-import Container from "../Container";
 import Images from "../Images";
 import Logo from "/src/assets/Logo.png";
-import { FiFacebook, FiTwitter, FiGithub, FiInstagram } from "react-icons/fi";
+import { FiFacebook, FiTwitter, FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="bg-[#172d51] py-16 md:py-25 text-white">
-      <div className="lg:w-[1140px] px-3 lg:px-0 mx-auto">
+    <footer className="bg-[#101011] text-zinc-300 font-sans border-t border-zinc-900 pt-16 pb-12">
+      <div className="w-full max-w-[1140px] px-5 lg:px-0 mx-auto">
         
-        <div className="flex flex-col md:flex-row justify-between gap-y-10 md:gap-y-0">
+        {/* Main Footer Content */}
+        <div className="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-8 pb-12 border-b border-zinc-800/60">
           
           {/* Logo & Description Section */}
-          <div className="w-full md:w-1/2">
-            <Link to="/">
-              <Images imgSrc={Logo} className={"w-[70px]"} />
+          <div className="w-full md:w-[40%] flex flex-col items-start">
+            <Link to="/" className="mb-4">
+              <Images imgSrc={Logo} className="w-[45px] object-contain" />
             </Link>
-            <p className="w-full md:w-[437px] text-lg opacity-40 py-6">
-              In an ideal world this text wouldn’t exist, a client would
-              acknowledge the importance of having web copy before the design
-              starts.
+            <p className="text-zinc-400 text-sm md:text-base font-light leading-relaxed max-w-sm mb-6">
+              Crafting exceptional and user-centric digital experiences with modern web technologies. Let's build something great together.
             </p>
-            <div className="flex items-center gap-x-3.5 text-lg opacity-40">
-              <Link to="/"><i><FiFacebook /></i></Link>
-              <Link to="/"><i><FiTwitter /></i></Link>
-              <Link to="/"><i><FiGithub /></i></Link>
-              <Link to="/"><i><FiInstagram /></i></Link>
+            
+            {/* Social Icons */}
+            <div className="flex items-center gap-3 text-zinc-400">
+              <a href="https://github.com/mesbaulrafi" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:text-zinc-100 hover:border-zinc-700 transition-colors">
+                <FiGithub size={18} />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:text-zinc-100 hover:border-zinc-700 transition-colors">
+                <FiLinkedin size={18} />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:text-zinc-100 hover:border-zinc-700 transition-colors">
+                <FiFacebook size={18} />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 hover:text-zinc-100 hover:border-zinc-700 transition-colors">
+                <FiInstagram size={18} />
+              </a>
             </div>
           </div>
 
           {/* Footer Menu Section */}
-          <div className="w-full md:w-1/2 grid grid-cols-2 md:flex md:items-center md:justify-between gap-y-8">
+          <div className="w-full md:w-[50%] grid grid-cols-2 sm:grid-cols-3 gap-8">
             
             {/* Company Column */}
             <div>
-              <ul>
-                <li className="pb-6 font-medium text-xl underline decoration-transparent">Company</li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/">Home</Link></li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/about">About</Link></li>
-                <li className="text-lg opacity-40"><Link to="/services">Services</Link></li>
+              <h4 className="font-semibold text-zinc-100 text-sm uppercase tracking-wider mb-4">Company</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link to="/" className="text-zinc-400 hover:text-zinc-100 transition-colors">Home</Link></li>
+                <li><Link to="/about" className="text-zinc-400 hover:text-zinc-100 transition-colors">About</Link></li>
+                <li><Link to="/services" className="text-zinc-400 hover:text-zinc-100 transition-colors">Services</Link></li>
               </ul>
             </div>
 
             {/* Information Column */}
             <div>
-              <ul>
-                <li className="pb-6 font-medium text-xl">Information</li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/">Resume</Link></li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/">Client Say</Link></li>
-                <li className="text-lg opacity-40"><Link to="/projects">Projects</Link></li>
+              <h4 className="font-semibold text-zinc-100 text-sm uppercase tracking-wider mb-4">Portfolio</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link to="/projects" className="text-zinc-400 hover:text-zinc-100 transition-colors">Projects</Link></li>
+                <li><Link to="/contact" className="text-zinc-400 hover:text-zinc-100 transition-colors">Contact</Link></li>
               </ul>
             </div>
 
             {/* More info Column */}
             <div>
-              <ul>
-                <li className="pb-6 font-medium text-xl">More info</li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/">Blogs</Link></li>
-                <li className="text-lg opacity-40 pb-3"><Link to="/contact">Contact</Link></li>
-                <li className="text-lg opacity-40"><Link to="/">Terms & condition</Link></li>
+              <h4 className="font-semibold text-zinc-100 text-sm uppercase tracking-wider mb-4">Legal</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link to="/" className="text-zinc-400 hover:text-zinc-100 transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/" className="text-zinc-400 hover:text-zinc-100 transition-colors">Terms & Conditions</Link></li>
               </ul>
             </div>
 
           </div>
         </div>
+
+        {/* Bottom Copyright Section */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 gap-4">
+          <p>© {new Date().getFullYear()} Mesbaul Haque Rafi. All rights reserved.</p>
+          <p>Designed & Built with React & Tailwind CSS</p>
+        </div>
+
       </div>
-    </div>
+    </footer>
   );
 };
 
