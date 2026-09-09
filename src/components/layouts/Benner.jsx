@@ -52,7 +52,7 @@ const Banner = () => {
             </p>
 
             {/* Button */}
-            <a href="/public/resumeRafi.pdf" download={'Resume-MesbaulRafi'}>
+            <a href="/public/MesbaulRafi.pdf" download={'Resume-MesbaulRafi'}>
               <Button 
                 btnText={"Download Resume"}  
                 className="bg-zinc-100 text-zinc-950 font-semibold px-8 py-3 rounded-lg hover:bg-white hover:-translate-y-1 transition-all duration-300"
