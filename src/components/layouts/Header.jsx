@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import Images from '../Images';
 import Logo from '/src/assets/Logo.png';
 import { FaAnglesRight } from "react-icons/fa6";
@@ -10,6 +11,15 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef(null);
+  const location = useLocation();
+
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Services', path: '/services' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Contact', path: '/contact' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -40,11 +50,6 @@ const Header = () => {
     return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
 
-  const navLinkStyle = ({ isActive }) =>
-    `text-sm lg:text-base font-medium transition-colors duration-300 ${
-      isActive ? 'text-zinc-100' : 'text-zinc-400 hover:text-zinc-200'
-    }`;
-
   return (
     <header
       ref={navRef}
@@ -59,16 +64,38 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" onClick={() => setIsOpen(false)} className="relative z-50">
-            <Images imgSrc={Logo} className="object-contain h-[40px] lg:h-[45px]" />
+            <Images imgSrc={Logo} className="object-contain h-10 lg:h-[45px]" />
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
-            <NavLink to="/" className={navLinkStyle}>Home</NavLink>
-            <NavLink to="/about" className={navLinkStyle}>About</NavLink>
-            <NavLink to="/services" className={navLinkStyle}>Services</NavLink>
-            <NavLink to="/projects" className={navLinkStyle}>Projects</NavLink>
-            <NavLink to="/contact" className={navLinkStyle}>Contact</NavLink>
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              return (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className={`relative text-sm lg:text-base font-medium transition-colors duration-300 py-1 ${
+                    isActive ? 'text-zinc-100' : 'text-zinc-400 hover:text-zinc-200'
+                  }`}
+                >
+                  {link.name}
+                  {/* Moving Border Animation (Strictly Horizontal) */}
+                  {isActive && (
+                    <motion.div
+                      layoutId="desktop-nav-underline"
+                      className="absolute left-0 -bottom-1 w-full h-0.5 bg-zinc-100 rounded-full"
+                      initial={false}
+                      transition={{
+                        type: "tween",
+                        ease: "easeInOut",
+                        duration: 0.3
+                      }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Desktop Hire Me Button */}
@@ -98,11 +125,21 @@ const Header = () => {
           }`}
         >
           <nav className="flex flex-col items-center gap-6 px-5">
-            <NavLink to="/" onClick={() => setIsOpen(false)} className={navLinkStyle}>Home</NavLink>
-            <NavLink to="/about" onClick={() => setIsOpen(false)} className={navLinkStyle}>About</NavLink>
-            <NavLink to="/services" onClick={() => setIsOpen(false)} className={navLinkStyle}>Services</NavLink>
-            <NavLink to="/projects" onClick={() => setIsOpen(false)} className={navLinkStyle}>Projects</NavLink>
-            <NavLink to="/contact" onClick={() => setIsOpen(false)} className={navLinkStyle}>Contact</NavLink>
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+              return (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`text-sm font-medium transition-colors duration-300 ${
+                    isActive ? 'text-zinc-100' : 'text-zinc-400 hover:text-zinc-200'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
             
             <Link to="/contact" onClick={() => setIsOpen(false)} className="mt-2 w-full max-w-[200px]">
               <button className="w-full flex justify-center items-center gap-2 bg-zinc-100 text-zinc-950 font-semibold py-3 px-5 rounded-lg hover:bg-white transition-all duration-300 text-sm">
